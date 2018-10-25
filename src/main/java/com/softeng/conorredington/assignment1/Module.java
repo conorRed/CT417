@@ -1,24 +1,26 @@
 package com.softeng.conorredington.assignment1;
+
+import java.util.ArrayList;
+
 /*
  * @Author Conor Redington
  */
 public class Module {
-	private Student[] students;
+	private ArrayList<Student> students;
 	private Course[] courses;
 	private String name;
 	
-	public Module(String name, Course[] courses, Student[] students) {
+	public Module(String name, ArrayList<Student> students) {
 		this.setStudents(students);
-		this.setCourses(courses);
 		this.setName(name);
 	}
 
-	public Student[] getStudents() {
+	public ArrayList<Student> getStudents() {
 		return students;
 	}
 
-	public void setStudents(Student[] students) {
-		this.students = students;
+	public void setStudents(ArrayList<Student> students2) {
+		this.students = students2;
 	}
 
 	public Course[] getCourses() {
