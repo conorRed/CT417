@@ -1,5 +1,7 @@
 package com.softeng.conorredington.assignment1;
 
+import java.util.ArrayList;
+
 import org.joda.time.DateTime;
 
 /*
@@ -7,11 +9,11 @@ import org.joda.time.DateTime;
  */
 public class Course {
 	private String name;
-	private Module[] modules;
-	private Student[] students;
+	private ArrayList<Module> modules;
+	private ArrayList<Student> students;
 	private DateTime startDate, endDate;
 	
-	public Course(String name, Module[] modules, Student[] students, DateTime start, DateTime end) {
+	public Course(String name, ArrayList<Module> modules, ArrayList<Student> students, DateTime start, DateTime end) {
 		this.name = name;
 		this.modules = modules;
 		this.students = students;
@@ -27,19 +29,19 @@ public class Course {
 		this.name = name;
 	}
 
-	public Module[] getModules() {
+	public ArrayList<Module> getModules() {
 		return modules;
 	}
 
-	public void setModules(Module[] modules) {
+	public void setModules(ArrayList<Module> modules) {
 		this.modules = modules;
 	}
 
-	public Student[] getStudents() {
+	public ArrayList<Student> getStudents() {
 		return students;
 	}
 
-	public void setStudents(Student[] students) {
+	public void setStudents(ArrayList<Student> students) {
 		this.students = students;
 	}
 
