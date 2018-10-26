@@ -5,5 +5,4 @@ build:
     - mkdir -p shippable/codecoverage
 
     #Run test and code coverage and output results to the right folder
-    - mvn clean 
-    - mvn test 
+    - mvn clean cobertura:cobertura
