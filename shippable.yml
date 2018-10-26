@@ -1,4 +1,8 @@
 language: java
 build: 
    ci:
-           - mvn test    
+    - mkdir -p shippable/testresults
+    - mkdir -p shippable/codecoverage
+
+    #Run test and code coverage and output results to the right folder
+    - mvn clean cobertura:cobertura
