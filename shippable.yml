@@ -5,7 +5,7 @@ build:
    ci:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
-        - rm -rf ~/.m2/*
+    - rm -rf ~/.m2/repository
 
     #Run test and code coverage and output results to the right folder
     - mvn clean cobertura:cobertura
