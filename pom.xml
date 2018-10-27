@@ -30,23 +30,7 @@
     <dependency>
     	<groupId>cobertura</groupId>
     	<artifactId>cobertura</artifactId>
-    	<version>1.9rc1</version>
+    	<version>1.8</version>
     </dependency>
   </dependencies>
-  
-  <build>
-  	<plugins>
-	    <plugin>
-		  <groupId>org.codehaus.mojo</groupId>
-		  <artifactId>cobertura-maven-plugin</artifactId>
-		  <version>2.6</version>
-		  <configuration>
-		    <format>xml</format>
-		    <maxmem>256m</maxmem>
-		    <aggregate>true</aggregate>
-		    <outputDirectory>shippable/codecoverage</outputDirectory>
-		  </configuration>
-		</plugin>
-  	</plugins>
-  </build>
 </project>
